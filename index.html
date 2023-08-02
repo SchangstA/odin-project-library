@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css" class="css">
+
+<body>
+  <div>
+    <h2 class="text-center fs-600 header">Book Library</h2>
+  </div>
+  <!-- input books data -->
+  <form onsubmit="return false" class=" text-center bottom visually-hidden" id="add-book-form">
+    <div class="form-container">
+      <div>
+        <input type="text" id="input-box" placeholder="Title">
+      </div>
+      <div>
+        <input type="text" id="input-box-2" placeholder="Author">
+      </div>
+      <div>
+        <input type="text" id="input-box-3" placeholder="Pages">
+      </div>
+      <button class="button" id="add-book-btn">Submit</button>
+      </div>
+    </div>
+  </form>
+    <div class="container text-center">
+      <button class="button" id="bringup-form">Add New Book +</button>
+    </div>
+  </div>
+  <!-- library cards -->
+  <div class="even-columns text-center" id="parent">
+  </div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
