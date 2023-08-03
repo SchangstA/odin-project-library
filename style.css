@@ -116,6 +116,10 @@ svg {
   }
 }
 
+p {
+  font-size: 14px;
+}
+
 /* header */
 
 .header {
@@ -149,7 +153,7 @@ input {
   background-color: white;
   border-radius: 6px;
   height: 10rem;
-  max-width: 12rem;
+  max-width: 100%;
   min-width: 12rem;
 }
 
@@ -171,6 +175,26 @@ input {
 }
 
 .button:hover {
+  background-color: var(--clr-primary-400);
+  color: black;
+}
+
+.remove {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 0.5em 2em;
+  margin-block: 1.5rem;
+  font-weight: var(--fw-bold-pop);
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-neutral-300);
+  background-color: var(--clr-primary-500);
+}
+
+.remove:hover {
   background-color: var(--clr-primary-400);
   color: black;
 }
@@ -211,7 +235,7 @@ input {
 
   .even-columns {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin-inline: 3rem;
     margin-block: 1rem;
     height: 100%;
